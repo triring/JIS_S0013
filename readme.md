@@ -86,9 +86,9 @@ JIS.class, JIS$s0013.classがプログラム本体。JIS.class, JIS$s0013.class�
     java JIS$s0013 <patternfile> <aufile>
 
     patternfile : 読み込むパターンファイル名
-    aufile      : 出力するauファイル名，拡張子は，必ず，.auにしてください。
+    aufile      : 出力するauファイル名，拡張子は，必ず，.auにすること。
 
-以下に実行例を示めす。
+以下に実行例を示す。
 
     $ java JIS\$s0013 End_Far7.ptn End_Far7.au
     # End_Far7.ptn       終了音　遠 7  パターンを5回繰り返す
@@ -102,14 +102,16 @@ JIS.class, JIS$s0013.classがプログラム本体。JIS.class, JIS$s0013.class�
 'W'の部分は発振期間を示している。
 '-'の部分は休止期間を示している。
 
-主要な報知音パターンで生成した .auファイルをauディレクトリに保管した。
-Javaの実行環境がない場合は、以下よりダウンロードすることができる。。
+主要な報知音パターンで生成した .auファイルを auディレクトリに保管した。
+また、.auファイルを wav形式に変換したファイルを wavディレクトリに保管した。
+Javaの実行環境がない場合は、以下よりダウンロードすることができる。
 
-[au/](https://github.com/triring/JIS_S0013/tree/master/au)
+[au/](https://github.com/triring/JIS_S0013/tree/master/au)  
+[wav/](https://github.com/triring/JIS_S0013/tree/master/wav)  
 
 ## コンパイル
 
-内部の処理に興味のある方は，ソースリストJIS.javaを参照すること。
+内部の処理に興味の場合は，ソースリスト JIS.java を参照すること。
 コンパイル方法は以下の通り。
 特殊なクラスは使用していないが，内部クラスを使用しているので、JDK1.1以上の開発環境が必要。
 現在使用されているOS環境から考えるとJava 2 SDK, Standard Edition 1.3.0以上の開発環境を推奨する。
@@ -119,7 +121,7 @@ Javaの実行環境がない場合は、以下よりダウンロードするこ�
 
 ## ライセンス
 
-お粗末なソースリストではあるが、[Poul-Henning Kamp](https://people.freebsd.org/%7Ephk/) 氏が提唱しているBEER-WAREライセンスを踏襲し配布する。  
+お粗末なコードではあるが、[Poul-Henning Kamp](https://people.freebsd.org/%7Ephk/) 氏が提唱しているBEER-WAREライセンスを踏襲し配布する。  
 
 ### "THE BEER-WARE LICENSE" (Revision 42):
 <akio@triring.net> wrote this file. As long as you retain this notice you
