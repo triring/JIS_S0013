@@ -26,6 +26,10 @@ java JIS\$s0013 pattern/Stop1.ptn           au/Stop1.au
 java JIS\$s0013 pattern/Stop2.ptn           au/Stop2.au
 java JIS\$s0013 pattern/SOS.ptn             au/SOS.au
 
+sudo apt update
+sudo apt upgrade
+sudo apt install sox
+
 mkdir wav
 sox au/Attention1.au     wav/Attention1.wav
 sox au/Attention2.au     wav/Attention2.wav
