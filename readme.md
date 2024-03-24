@@ -102,10 +102,10 @@ JIS.class, JIS$s0013.classがプログラム本体。JIS.class, JIS$s0013.class�
 'W'の部分は発振期間を示している。
 '-'の部分は休止期間を示している。
 
-主要な報知音パターンで生成した .auファイルをaudioディレクトリに保管した。
+主要な報知音パターンで生成した .auファイルをauディレクトリに保管した。
 Javaの実行環境がない場合は、以下よりダウンロードすることができる。。
 
-[audio/](./audio/)
+[au/](https://github.com/triring/JIS_S0013/tree/master/au)
 
 ## 報知音の試聴  
 
