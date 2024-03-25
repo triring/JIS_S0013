@@ -287,10 +287,10 @@ System.out.println(
                    AuFile      = args[1];
                    break;
             case  0 : System.out.println("JIS$s0013.class");
-                      System.out.println("Copyright (C) 2002 - 2024, Akio MIWA");
-                      System.out.println("Published under the GNU GPL");
-                      System.out.println("https://www.okakogi.go.jp/People/miwa/");
-                      System.out.println("e-mail : akio@triring.net\n\n");
+                      System.out.println("Copyright (C) 2002 - 2024, triring");
+                      System.out.println("Published under 'THE BEER-WARE LICENSE' (Revision 42)");
+                      System.out.println("https://github.com/triring/");
+                      System.out.println("e-mail : akio@triring.net\n");
 
             default : System.out.println("usage: java JIS$s0013 patternfile aufile");
                    System.out.println("Example>java JIS\\$s0013 start.ptn start.au");

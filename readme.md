@@ -109,9 +109,67 @@ Javaの実行環境がない場合は、以下よりダウンロードするこ�
 [au/](https://github.com/triring/JIS_S0013/tree/master/au)  
 [wav/](https://github.com/triring/JIS_S0013/tree/master/wav)  
 
+
+## 報知音の試聴  
+
+wav形式のファイルで出力した報知音をダウンロードできるようにしました。
+ブラウザによっては、そのまま
+再生ソフトを呼び出し、すぐに視聴することが可能です。
+
+### 基点音  
+
+[基点音 1](https://github.com/triring/JIS_S0013/raw/master/wav/BasePoint1.wav)	対象音の前に受付音が2回鳴る  
+[基点音 2](https://github.com/triring/JIS_S0013/raw/master/wav/BasePoint2.wav)	対象音の前に受付音が2回鳴る  
+
+### 受付・スタート音  
+
+[受付・スタート音 1](https://github.com/triring/JIS_S0013/raw/master/wav/Start1.wav)	単純音1回  
+[受付・スタート音 2](https://github.com/triring/JIS_S0013/raw/master/wav/Start2.wav)	単純音1回  
+
+### 停止音  
+
+[停止音 1](https://github.com/triring/JIS_S0013/raw/master/wav/Stop1.wav)	対象音の前に受付音が1回鳴る  
+[停止音 2](https://github.com/triring/JIS_S0013/raw/master/wav/Stop2.wav)	対象音の前に受付音が1回鳴る  
+
+### 終了音　遠  
+
+[終了音　遠 1](https://github.com/triring/JIS_S0013/raw/master/wav/End_Far1.wav)	パターンを5回繰り返す  
+[終了音　遠 2](https://github.com/triring/JIS_S0013/raw/master/wav/End_Far2.wav)	パターンを5回繰り返す  
+[終了音　遠 3](https://github.com/triring/JIS_S0013/raw/master/wav/End_Far3.wav)	パターンを5回繰り返す  
+[終了音　遠 4](https://github.com/triring/JIS_S0013/raw/master/wav/End_Far4.wav)	パターンを5回繰り返す  
+[終了音　遠 5](https://github.com/triring/JIS_S0013/raw/master/wav/End_Far5.wav)	組み合わせ音1回  
+[終了音　遠 6](https://github.com/triring/JIS_S0013/raw/master/wav/End_Far6.wav)	組み合わせ音1回  
+[終了音　遠 7](https://github.com/triring/JIS_S0013/raw/master/wav/End_Far7.wav)	パターンを5回繰り返す  
+
+### 終了音　近  
+
+[終了音　近 1](https://github.com/triring/JIS_S0013/raw/master/wav/End_Near1.wav)	単純音1回  
+[終了音　近 2](https://github.com/triring/JIS_S0013/raw/master/wav/End_Near2.wav)	単純音1回  
+[終了音　近 3](https://github.com/triring/JIS_S0013/raw/master/wav/End_Near3.wav)	単純音1回  
+[終了音　近 4](https://github.com/triring/JIS_S0013/raw/master/wav/End_Near4.wav)	組み合わせ音1回  
+
+### 注意音　強  
+
+[注意音　強 1](https://github.com/triring/JIS_S0013/raw/master/wav/CautionNeeded1.wav)	単純繰り返し（回数は任意）今回は5秒間の繰り返し  
+[注意音　強 2](https://github.com/triring/JIS_S0013/raw/master/wav/CautionNeeded2.wav)	単純繰り返し（回数は任意）今回は5秒間の繰り返し  
+[注意音　強 3](https://github.com/triring/JIS_S0013/raw/master/wav/CautionNeeded3.wav)	単純繰り返し（回数は任意）今回は5秒間の繰り返し  
+[注意音　強 4](https://github.com/triring/JIS_S0013/raw/master/wav/CautionNeeded4.wav)	単純繰り返し（回数は任意）今回は5秒間の繰り返し  
+
+### 注意音　弱  
+
+[注意音　弱 1](https://github.com/triring/JIS_S0013/raw/master/wav/Attention1.wav)	単純繰り返し（回数は任意）今回は5秒間の繰り返し  
+[注意音　弱 2](https://github.com/triring/JIS_S0013/raw/master/wav/Attention2.wav)	単純繰り返し（回数は任意）今回は5秒間の繰り返し  
+[注意音　弱 3](https://github.com/triring/JIS_S0013/raw/master/wav/Attention3.wav)	組み合わせ音繰り返し（回数は任意）今回は5秒間の繰り返し  
+
+### おまけ  
+
+[国際救難信号 SOS](https://github.com/triring/JIS_S0013/raw/master/wav/SOS.wav)	モールス信号では「・・・, - - -, ・・・」、「・」は短音、「-」は長音  
+
+<!-- pandoc -f markdown -t html5 -o readme.html -c github.css readme.md -->
+
 ## コンパイル
 
-内部の処理に興味の場合は，ソースリスト JIS.java を参照すること。
+内部の処理に興味がある場合は，ソースリスト JIS.java を参照すること。
 コンパイル方法は以下の通り。
 特殊なクラスは使用していないが，内部クラスを使用しているので、JDK1.1以上の開発環境が必要。
 現在使用されているOS環境から考えるとJava 2 SDK, Standard Edition 1.3.0以上の開発環境を推奨する。
@@ -126,12 +184,12 @@ Javaの実行環境がない場合は、以下よりダウンロードするこ�
 ### "THE BEER-WARE LICENSE" (Revision 42):
 <akio@triring.net> wrote this file. As long as you retain this notice you
 can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.
-Akio MIWA @triring
+Copyright (c) 2024 Akio MIWA @triring  
 
 ### "THE BEER-WARE LICENSE" (第42版):
 このファイルは、<akio@triring.net> が書きました。あなたがこの条文を載せている限り、あなたはソフトウェアをどのようにでも扱うことができます。
 もし、いつか私達が出会った時、あなたがこのソフトに価値があると感じたなら、見返りとして私にビールを奢ることができます。  
-Akio MIWA @triring
+Copyright (c) 2024 Akio MIWA @triring  
 
 ## 謝辞ならびに参考文献
 
